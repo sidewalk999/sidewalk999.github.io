@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanac</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 210vh;
+            background-image: url(img/IMG_2955.jpg);
+            background-size: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            color:rgb(0, 0, 0);
+            font-family: Arial;
+            font-size: 15px;
+
+        }
+        header {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+        /* style class */
+        .content-wrapper{
+            display: flex;
+            flex-direction: column;
+            padding: 0.7rem;
+            margin: 0rem;
+            gap: 0.7rem;
+        }
+        .content-wrapper > :nth-child(1) {
+            padding: 0.5rem;
+            width: 10%;
+            background-color: whitesmoke;
+        }
+            .content-wrapper > :nth-child(2) {
+            padding: 0.5rem;
+            width: 10%;
+            background-color: whitesmoke;
+        }
+        .content-wrapper > :nth-child(3) {
+            padding: 0.5rem;
+            width: 10%;
+            background-color: whitesmoke;
+        }
+        .link1 {
+        position: absolute;
+        top: 51%;
+        left: 42.6%;
+        color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div>
+            <h2>ALMANAC</h2>
+            <p>Lane's almanac</p>
+        </div>
+        <div>
+            <h2>About</h2>
+            <p>My research explores the intersection of
+                humour, graphic design, and vernacular art.
+                It is grounded in my personal collection
+                and my design practice which focuses
+                on everyday images and their cultural
+                significance. I am particularly interested
+                in understanding how humour functions in
+                art and design and how everyday imagery
+                contributes to the generation of meaning
+                in visual culture. The two aspects are
+                interrelated: humour is often embedded in
+                daily life and vernacular design, and through
+                visual means they can reveal insights about
+                cultural and artistic values.</p>
+        </div>
+        <div>
+            <h2>Contact</h2>
+            <p>sidewalk<br>
+                9<br>
+                9<br>
+                9<br>
+                @outlook.com</p>
+        </div>
+    </div>
+    <a href="./entry1.html" class="link1">
+        <div>
+            <img src="./img/1.gif">
+        </div>
+    </a>
+</body>
+</html>

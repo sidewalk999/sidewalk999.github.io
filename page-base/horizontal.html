@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanac</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background-image: url(img/Artboard\ 1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color:rgb(0, 0, 0);
+            font-family: Arial;
+            font-size: 15px;
+            cursor: url('img/cursor2.png'), auto;
+
+        }
+        header {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+        /* style class */
+        .horizontal-scroll-wrapper {
+         width: max-content;
+         height: 300px;
+         display: flex;
+         overflow-y: auto;
+         overflow-x: hidden;
+         transform: rotate(-90deg);
+         transform-origin: right top;
+        }
+        .horizontal-scroll-wrapper > div {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        transform: rotate(90deg);
+        transform-origin: right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal-scroll-wrapper squares">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+      </div>
+    </div>
+</body>
+</html>
